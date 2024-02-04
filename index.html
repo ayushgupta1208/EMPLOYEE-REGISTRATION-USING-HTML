@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Its EMPLOYEES registration form that employees fill "
+    />
+    <meta name="author" content="Ayush" />
+    <meta name="keywords" content="employees,Form,registration" />
+
+    <title>EMPLOYEES REGISTRATION</title>
+  </head>
+  <body>
+    <fieldset style="background-color: antiquewhite">
+      <form action="/submit" method="post">
+        <div>
+          <h1 style="text-align: center; color: rgb(15, 241, 241)">
+            <b>EMPLOYEES REGISTRATION FORM</b>
+          </h1>
+          <!-- <center><h1><b>EMPLOYEES REGISTRATION FORM</b></h1></center> -->
+          <!-- central tag brings it in the central-->
+          <hr />
+          <label>FIRST NAME:</label>
+          <input
+            type="text"
+            name="first name"
+            placeholder="first name"
+            size="10"
+            required
+          /><br /><br />
+          <label>MIDDLE NAME:</label>
+          <input
+            type="text"
+            name="middle name"
+            placeholder="middle name"
+            size="10"
+          /><br /><br />
+
+          <label>LAST NAME:</label>
+          <input
+            type="text"
+            name="last name"
+            placeholder="last name"
+            size="10"
+            required
+          /><br /><br />
+          <div>
+            <label>DEPARTMENT:</label>
+            <select>
+              <option value="course">Department</option>
+              <option value="BCA">Management</option>
+              <option value="BBA">Human resource</option>
+              <option value="B.TECH">Customer support</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label>GENDER:</label><br />
+            <input type="radio" value="male" name="gender" />male<br />
+
+            <input type="radio" value="female" name="gender" />female<br />
+
+            <input type="radio" value="other" name="gender" />other<br />
+          </div>
+          <br />
+          <label>PHONE:</label>
+          <input
+            type="text"
+            name="Country code"
+            placeholder="country code"
+            value="+91"
+            size="2"
+          />
+          <input
+            type="tel"
+            name="phone "
+            size="25"
+            pattern="[0-9]{4}-[0-9]{6}"
+            placeholder="1234-567890"
+            required
+          />
+          <br /><br />
+          Current Address:
+          <textarea
+            cals="25"
+            rows="5"
+            placeholder="Current Address"
+            value="address"
+            required
+          ></textarea
+          ><br /><br />
+          <label for="MyFile">Drop Your Resume:</label>
+          <input type="file" id="MyFile" name="MyFile" /><br /><br />
+          <!-- when you write type="file" one button will come and it will let to attach file to the system-->
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter Email" required /><br /><br />
+          <!--when you type="email" gives you advantage of writing an email with @ and .com to be compulsary-->
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="Password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+          <!--Passworde type lets you write Password with a asterisk*-->
+          <br /><br />
+          <label for="psw repeat"><b>Re-type Password</b></label>
+          <input
+            type="Password"
+            placeholder="Retype Password"
+            name="psw-repeat"
+            required
+          /><br /><br />
+          <button type="submit" class="registerbtn">Submit</button>
+          <input type="button " value="Clear" size="1" /><br />
+        </div>
+      </form>
+    </fieldset>
+  </body>
+</html>
